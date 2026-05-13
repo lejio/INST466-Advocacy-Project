@@ -1,9 +1,140 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { LinkPreview } from "astro-embed";
+import { Tweet } from "astro-embed";
 ---
 
 <Layout>
-    <main>
-        <h1>Sources</h1>
-    </main>
+  <main class="flex flex-col w-full justify-center items-center">
+    <div class="w-1/2 flex flex-col gap-10 my-[10vh]">
+      <div class="header flex flex-col gap-5">
+        <h1 class="text-4xl">Sources</h1>
+        <p>
+          External sources that inspired and informed the content of this
+          website, including other advocacy websites, news articles, and social
+          media posts.
+        </p>
+      </div>
+      <h2 class="text-2xl">Websites</h2>
+      <div class="flex flex-col gap-25 w-full">
+        <div class="flex flex-col gap-5">
+          <h2 class="text-2xl">Battle for the Net</h2>
+          <LinkPreview id="https://www.battleforthenet.com/" />
+          <p>
+            This is a high-impact grassroots mobilization hub run by the
+            advocacy groups Fight for the Future and Demand Progress. It serves
+            as a "digital headquarters" for internet users to take direct
+            political action. By making advocacy accessible to everyone with a
+            phone or computer, it ensures that voices from underrepresented
+            communities—those most affected by the digital divide—are heard by
+            lawmakers in Washington.
+          </p>
+        </div>
+        <div class="flex flex-col gap-5">
+          <h2 class="text-2xl">Electronic Frontier Foundation (EFF)</h2>
+          <LinkPreview id="https://www.eff.org/issues/net-neutrality" />
+          <p>
+            The EFF is the leading nonprofit defending civil liberties in the
+            digital world. Their Net Neutrality page provides deep legal and
+            technical analysis of why the "open pipe" model is essential for a
+            free society. They provide the "intellectual ammunition" for the
+            movement, filing legal amicus briefs in court cases and explaining
+            how technical ISP practices (like packet sniffing) violate user
+            rights.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <h2 class="text-2xl">Public Knowledge Net Neutrality</h2>
+          <LinkPreview id="https://publicknowledge.org/issue/net-neutrality/" />
+          <p>
+            Public Knowledge is a Washington D.C.-based public interest group
+            that works at the intersection of copyright, telecommunications, and
+            internet law. They focus on "Universal Service," advocating for
+            policies that treat the internet like a public utility. This is a
+            key solution to the digital divide, as it would force ISPs to
+            provide affordable, high-quality access to everyone, regardless of
+            their zip code.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <h2 class="text-2xl">Measurement Lab</h2>
+          <LinkPreview id="https://www.measurementlab.net/" />
+          <p>
+            M-Lab is an open-source project and the world's largest collection
+            of open internet performance data, co-founded by researchers and
+            Google. They provide the scientific evidence for advocacy. If an ISP
+            claims they aren't throttling data, M-Lab’s global database can be
+            used by researchers to prove whether or not certain types of traffic
+            are being slowed down.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <h2 class="text-2xl">Free Press Net Neutrality</h2>
+          <LinkPreview
+            id="https://www.freepress.net/issues/free-open-internet/net-neutrality"
+          />
+          <p>
+            Free Press is a national, nonpartisan organization that advocates
+            for media and technology policies that promote a free and open
+            internet. Their Net Neutrality page provides resources and updates
+            on the ongoing fight to preserve an open internet, highlighting the
+            impact of policy decisions on consumers and communities.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <h2 class="text-2xl">Social Media</h2>
+      <div class="flex flex-col gap-25 w-full">
+        <div>
+          <h2 class="text-2xl">@FightForTheFuture - X</h2>
+          <Tweet id="https://x.com/fightfortheftr/status/972970426291900416" />
+          <p>
+            This user on X(formerly Twitter) advocates for digital rights and
+            net neutrality. And not only that, they actively engage their
+            followers in discussions and campaigns to protect these rights.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl">Free Press - Youtube</h2>
+          <p>
+            This channel on YouTube provides videos and updates on digital
+            rights and net neutrality, helping to educate the public and
+            mobilize support for an open internet.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl">@EFForg - Instagram</h2>
+          <p>
+            This Instagram account shares updates and information on digital
+            rights and net neutrality, engaging followers with visual content
+            and campaigns to raise awareness.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl">r/NetNeutrality - Reddit</h2>
+          <p>
+            This subreddit is dedicated to discussions and news about net
+            neutrality, providing a platform for users to share information, ask
+            questions, and engage in conversations about digital rights and
+            internet freedom.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl">@eff.org - Bluesky</h2>
+          <p>
+            This Bluesky account shares updates and information on digital
+            rights and net neutrality, engaging followers with content and
+            campaigns to raise awareness.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
 </Layout>
