@@ -1,9 +1,90 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { YouTube } from "astro-embed";
 ---
 
 <Layout>
-    <main>
-        <h1>Videos</h1>
-    </main>
+  <main class="flex flex-col w-full justify-center items-center">
+    <div class="w-1/2 flex flex-col gap-10 my-[10vh]">
+      <div class="header flex flex-col gap-5">
+        <h1 class="text-4xl">Videos</h1>
+        <p>
+          Net neutrality has been around for decades, and advocates from all
+          corners of the internet continue to fight for its preservation.
+        </p>
+      </div>
+      <div class="videos flex flex-col gap-25">
+        <div class="flex flex-col gap-5">
+          <h2 class="text-2xl">Net Neutrality - Computerphile</h2>
+          <YouTube id="SC-7fyBfvsw" />
+          <p>Channel: Computerphile<br />Date: Nov 29, 2017</p>
+          <p>
+            The video features Professor Derek McAuley who explains that Net
+            Neutrality is the principle that Internet Service Providers (ISPs)
+            should not discriminate based on where data comes from, who is
+            receiving it, or the type of "protocol" (the language the computers
+            are using) being used. The video discusses the "bits are bits"
+            principle, which means that all data on the internet should be
+            treated equally, without discrimination. From a technical
+            perspective, a packet of data is just a packet. Professor Derek
+            McAuley compares it to a shipping parcel: you pay based on
+            weight/volume, not based on whether the contents inside the box are
+            a book or a diamond.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <h2 class="text-2xl">
+            Net Neutrality: Last Week Tonight with John Oliver (HBO)
+          </h2>
+          <YouTube id="fpbOEoRrHyU" />
+          <p>Channel: Last Week Tonight<br />Date: Jun 2, 2014</p>
+          <p>
+            In this segment, John Oliver explains that "Net Neutrality" is the
+            simple principle that all internet data must be treated equally by
+            providers. He argues that the FCC (at the time) was considering
+            rules that would allow a "two-tier" system, effectively ending the
+            open internet as we know it. John specifically talks about an
+            incident where Comcast's negotiations with Netflix led to a slowdown
+            in Netflix's streaming speeds for Comcast customers. He explains
+            that this is an example of how ISPs could potentially charge
+            companies for faster access to their customers, which would be
+            detrimental to smaller companies and startups that cannot afford to
+            pay for these "fast lanes."
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <h2 class="text-2xl">
+            What to know about net neutrality as FCC weighs restoring it
+          </h2>
+          <YouTube id="YSvrFVZsUzU" />
+          <p>
+            Channel: CBS News<br />Date: Apr 3, 2024
+          </p>
+          <p>
+            This video features NYU Law Professor Christopher Sprigman, who
+            discusses the Biden Administration’s efforts to reinstate net
+            neutrality rules that were removed during the Trump Administration.
+            Professor Sprigman states that California already has passed their
+            own net neutrality laws. Without net neutrality, Netflix for example
+            could pay ISPs to prioritize their content, while smaller companies
+            that cannot afford to pay for these "fast lanes" would be at a
+            disadvantage. He also mentions that the internet is a critical
+            infrastructure in today's world, and without net neutrality, it
+            could lead to a less competitive market and harm consumers.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="flex flex-row gap-5">
+        <a
+          href="/sources"
+          class="px-4 py-2 border border-black hover:bg-black hover:text-white transition rounded"
+          >Sources</a
+        >
+        <p class="text-center">---></p>
+      </div>
+    </div>
+  </main>
 </Layout>
