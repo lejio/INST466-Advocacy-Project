@@ -6,6 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://INST466-Advocacy-Project.github.io",
   fonts: [{
       provider: fontProviders.google(),
       name: "Roboto Mono",
