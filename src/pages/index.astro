@@ -1,17 +1,119 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <main class="flex flex-col w-full justify-center items-center">
+    <div class="w-1/2 flex flex-col items-center my-[10vh] gap-25">
+      <div class="header w-full flex flex-row gap-5">
+        <div class="flex flex-col gap-3">
+          <h1 class="font-mono text-4xl">Net Neutrality is a Human Right</h1>
+          <p>
+            The internet should be open and free for everyone. Join us in
+            protecting equal access to all websites and content.
+          </p>
+        </div>
+        <pre
+          class="font-mono whitespace-pre leading-none text-[10px] md:text-xs"
+          aria-label="ASCII art illustration">
+  ___   _      ___   _      ___   _      ___   _      ___   _
+ [(_)] |=|    [(_)] |=|    [(_)] |=|    [(_)] |=|    [(_)] |=|
+  '-`  |_|     '-`  |_|     '-`  |_|     '-`  |_|     '-`  |_|
+ /mmm/  /     /mmm/  /     /mmm/  /     /mmm/  /     /mmm/  /
+       |____________|____________|____________|____________|
+                             |            |            |
+                         ___  \_      ___  \_      ___  \_
+                        [(_)] |=|    [(_)] |=|    [(_)] |=|
+                         '-`  |_|     '-`  |_|     '-`  |_|
+                        /mmm/        /mmm/        /mmm/
+
+        </pre>
+      </div>
+      <pre
+        class="font-mono whitespace-pre leading-none text-[10px] md:text-xs"
+        aria-label="ASCII art illustration">
+    [ FAST LANE ]  $$$  ________________________
+    -----------------  /  [   STREAMING TV   ]  /
+    >>> >>> >>> >>>   /________________________/
+    
+    [ SLOW LANE ]       ________________________
+    -------------      /  [  SMALL BUSINESS  ]  /
+    ...  ...  ...     /________________________/
+      </pre>
+      <div class="section1 w-full flex flex-col gap-5">
+        <h2 class="text-2xl">Why Net Neutrality Matters</h2>
+        <div class="flex flex-row gap-10">
+          <div class="flex flex-col gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              ><path
+                d="M138,204a10,10,0,1,1-10-10A10,10,0,0,1,138,204ZM235.81,88.55a170,170,0,0,0-215.62,0,6,6,0,1,0,7.62,9.27,158,158,0,0,1,200.38,0,6,6,0,1,0,7.62-9.27Zm-32.08,35.79a122,122,0,0,0-151.46,0,6,6,0,0,0,7.46,9.41,110,110,0,0,1,136.54,0A6,6,0,0,0,200,135a6,6,0,0,0,3.73-10.7Zm-32.2,35.81a74,74,0,0,0-87.06,0,6,6,0,0,0,7.06,9.7,62,62,0,0,1,72.94,0,6,6,0,0,0,8.38-1.32A6,6,0,0,0,171.53,160.15Z"
+              ></path></svg
+            >
+            <h3 class="text-lg">Equal Access</h3>
+            <p class="text-sm">
+              All internet traffic should be treated equally, without
+              discrimination or preferential treatment.
+            </p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              ><path
+                d="M122,136V96a6,6,0,0,1,12,0v40a6,6,0,0,1-12,0Zm6,26a10,10,0,1,0,10,10A10,10,0,0,0,128,162ZM222,56v56c0,51.94-25.12,83.4-46.2,100.64-22.73,18.6-45.27,24.89-46.22,25.15a6,6,0,0,1-3.16,0c-1-.26-23.49-6.55-46.22-25.15C59.12,195.4,34,163.94,34,112V56A14,14,0,0,1,48,42H208A14,14,0,0,1,222,56Zm-12,0a2,2,0,0,0-2-2H48a2,2,0,0,0-2,2v56c0,37.75,13.94,68.39,41.44,91.06A130.94,130.94,0,0,0,128,225.72a131.17,131.17,0,0,0,40.56-22.66C196.06,180.39,210,149.75,210,112Z"
+              ></path></svg
+            >
+            <h3 class="text-lg">No Gatekeepers</h3>
+            <p class="text-sm">
+              ISPs shouldn't control what we can see or do online. Innovation
+              thrives in an open internet.
+            </p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              ><path
+                d="M112.6,158.43a58,58,0,1,0-57.2,0A93.83,93.83,0,0,0,5.21,196.72a6,6,0,0,0,10.05,6.56,82,82,0,0,1,137.48,0,6,6,0,0,0,10-6.56A93.83,93.83,0,0,0,112.6,158.43ZM38,108a46,46,0,1,1,46,46A46.06,46.06,0,0,1,38,108Zm211,97a6,6,0,0,1-8.3-1.74A81.8,81.8,0,0,0,172,166a6,6,0,0,1,0-12,46,46,0,1,0-17.08-88.73,6,6,0,1,1-4.46-11.14,58,58,0,0,1,50.14,104.3,93.83,93.83,0,0,1,50.19,38.29A6,6,0,0,1,249,205Z"
+              ></path></svg
+            >
+            <h3 class="text-lg">Freedom of Choice</h3>
+            <p class="text-sm">
+              Users should have the freedom to choose their online services and
+              content without interference from ISPs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section2 w-full flex flex-col gap-5">
+        <h2 class="text-2xl">The Fight Continues</h2>
+        <p>
+          Net neutrality protections have been repeatedly challenged and
+          overturned. Stay informed and take action to protect the open
+          internet.
+        </p>
+        <div class="flex flex-row gap-5">
+          <a href="/purpose" class="px-4 py-2 border border-black hover:bg-black hover:text-white transition rounded"
+            >Learn More</a
+          >
+          <a href="/research" class="px-4 py-2 border border-black hover:bg-black hover:text-white transition rounded"
+            >Research</a
+          >
+          <p class="text-center">---></p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
